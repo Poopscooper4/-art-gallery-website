@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.butdiv {
+    left: 50px;
+    position: absolute;
+    flex-direction: row-reverse;
+    display: flex;
+}
+.svgcenter {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+
+.butdiv button {
+    width: 204px;
+    height: 72px;
+    background-color: black;
+    border: none;
+    color: white;
+    color: var(--White, #fff);
+    font-family: "Big Shoulders Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.636px;
+}
+.svgdiv {
+    width: 56px;
+    height: 72px;
+    background-color: #d5966c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 1px white solid;
+    border-bottom: none;
+    border-left: none;
+    rotate: -135deg;
+    margin-left: 10px;
+}
+img {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+.midsec {
+    text-align: start;
+    background-color: #151515;
+    width: 100%;
+    display: flex;
+    gap: 220px;
+}
+.map {
+    position: relative;
+    background-color: #151515;
+}
+.mid {
+    width: 100%;
+    padding: 104px 165px;
+    background-color: #151515;
+}
+.midsec h1 {
+    color: var(--White, #fff);
+    font-feature-settings:
+        "liga" off,
+        "clig" off;
+
+    /* Heading (L) */
+    font-family: "Big Shoulders Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px; /* 100% */
+    text-transform: uppercase;
+}
+.txtdiv h5 {
+    color: var(--Gold, #d5966c);
+    font-feature-settings:
+        "liga" off,
+        "clig" off;
+
+    /* Heading (S) */
+    font-family: "Big Shoulders Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; /* 100% */
+    text-transform: uppercase;
+}
+.txtdiv p {
+    color: var(--White, #fff);
+    font-feature-settings:
+        "liga" off,
+        "clig" off;
+
+    /* Body (M) */
+    font-family: "Outfit";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 145.455% */
+}
+.txtdiv {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer {
+    width: 100%;
+    background-color: #d5966c;
+    padding: 80px 165px;
+}
+.footerdiv {
+    gap: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+.footertxt {
+    color: var(--Almost-Black, #151515);
+    font-family: "Outfit";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    width: 430px;
+}
+.icondiv {
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin-left: 150px;
+}
+.fa-brands:hover {
+    transition: 0.5s;
+    color: white;
+}
+.img2{
+    display: none;
+}
+.img3{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    * {
+        transition: 0.5s;
+    }
+
+    .mid{
+        padding: 88px 40px;
+    }
+    .midsec{
+        gap: 68px;
+    }
+    .img2{
+        display: unset;
+    }
+    .img1{
+        display: none;
+    }
+    .icondiv{
+        margin: 0;
+    }
+    .txtdiv{
+        width: 100%;
+    }
+    footer{
+        padding: 56px 40px;
+    }
+    .footerdiv{
+        gap: 64px;
+    }
+}
+@media screen and (max-width: 520px){
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+    .img3{
+        display: unset;
+    }
+    .mid{
+        padding: 48px 16px;
+    }
+    .midsec{
+        flex-direction: column;
+    }
+    .txtdiv{
+        width: 100%;
+        flex-direction: column;
+    }
+    footer{
+        padding: 48px 32px;
+    }
+    .footerdiv{
+        flex-direction: column;
+    }
+    .footertxt{
+        width: 100%;
+    }
+}
